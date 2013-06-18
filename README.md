@@ -1,7 +1,7 @@
-VisualizeWellKnownValue
+VisualizeWellKnownText
 =======================
 
-Using Google Maps, a simple tool to visualize a spatial Well Known Value string.
+Using Google Maps, a simple tool to visualize spatial Well Known Text strings.
 
 
-Coming soon...
+Working demo available here: http://thisissammysaccount.github.io/VisualizeWellKnownText/
