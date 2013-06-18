@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Visualize A Spatial Well Known Value by ThisIsSammysAccount</title>
+    <title>Visualize Spatial Well Known Text by ThisIsSammysAccount</title>
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="stylesheets/ie.css">
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
   </head>
   <body>
       <div id="header">
@@ -31,17 +30,19 @@
 
       <section>
         <div id="title">
-          <h1>Visualize A Spatial Well Known Value</h1>
-          <p>Using Google Maps, a simple tool to visualize a spatial Well Known Value string.</p>
+          <h1>Visualize Spatial Well Known Text</h1>
+          <p>Using Google Maps, a simple tool to visualize spatial Well Known Text strings.</p>
           <hr>
           <span class="credits left">Project maintained by <a href="https://github.com/ThisIsSammysAccount">ThisIsSammysAccount</a></span>
           <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
         </div>
+        <h3>Working Demo</h3>
 
-        <h3>
-<a name="right-now-this-is-just-a-test-page" class="anchor" href="#right-now-this-is-just-a-test-page"><span class="octicon octicon-link"></span></a>Right now this is just a test page</h3>
-
-<p>More content coming soon...</p>
+<p><a href="http://en.wikipedia.org/wiki/Well-known_text" target="_blank">Well-known text (WKT)</a> is a text markup language for representing vector geometry objects on a map. Using the <a href="https://developers.google.com/maps/" target="_blank">Google Maps API</a> there is now a simple tool to actually see what a WKT value looks like.</p>
+          Paste your WKT string into the box below:<br />
+          <textarea id="txtWKV" name="txtWKV" rows="5" style="width: 100%; height: 200px;"></textarea>
+          <br /><br />
+          <div id="map-canvas" style="height: 400px; width: 650px;"></div>
       </section>
 
     </div>
@@ -56,6 +57,9 @@
             pageTracker._trackPageview();
             } catch(err) {}
           </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script src="javascripts/GoogleWKTDisplay.js"></script>
 
   </body>
 </html>
