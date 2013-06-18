@@ -55,7 +55,7 @@
     map.fitBounds(bounds);
 }
 
-//pulls all lat/long pairs out of a Well Known Value string
+//pulls all lat/long pairs out of a Well Known Text string
 var parseWKV = function (value) {
     if (!value) { return undefined; }
 
